@@ -1,0 +1,34 @@
+{
+	"name": "gradle-install-manager",
+	"private": true,
+	"author": "Involvex",
+	"type": "module",
+	"module": "src/index.ts",
+	"bin": {
+		"gim": "src/index.ts",
+		"gradle-install-manager": "src/index.ts"
+	},
+	"scripts": {
+		"prebuild": "bun run format && bun run typecheck && bun run lint:fix",
+		"build": "bun build src/index.ts --outdir lib --target node",
+		"dev": "bun --watch src/index.ts",
+		"format": "prettier . --write",
+		"lint": "eslint src",
+		"lint:fix": "eslint src --fix",
+		"typecheck": "tsc --noEmit"
+	},
+	"prettier": "@involvex/prettier-config",
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@involvex/prettier-config": "^0.0.5",
+		"@types/bun": "latest",
+		"eslint": "^10.4.0",
+		"globals": "^17.6.0",
+		"jiti": "^2.7.0",
+		"prettier": "^3.8.3",
+		"typescript-eslint": "^8.59.4"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	}
+}
