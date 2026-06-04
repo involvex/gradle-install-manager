@@ -211,7 +211,7 @@ Consider these areas for future development:
 
 Common issues and solutions:
 
-1. **"Command not found" after installation**: 
+1. **"Command not found" after installation**:
    - Ensure the gradle bin directory is in your PATH
    - Run `gim install <version>` and follow the PATH instruction in output
 
@@ -238,5 +238,6 @@ If you need assistance while working on this project:
 3. **Review issues**: Check GitHub issues for known problems and feature requests
 4. **Consult documentation**: Refer to this file and any future documentation
 
---- 
-*Last updated: $(Get-Date -Format yyyy-MM-dd)*
+---
+
+_Last updated: $(Get-Date -Format yyyy-MM-dd)_
